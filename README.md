@@ -1,12 +1,53 @@
-# Getting Started with Create React App
+# FlixWorld App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Movies & TV Series information application.
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This application shows trending Movies & TV Series information. Also has feature of searching and filtering results according to genres. This application uses
+* [TMDB API](https://www.themoviedb.org/)
+* [ReactJS](https://reactjs.org/) for frontend
+* [SASS](https://sass-lang.com/) for styling
+* [Redux](https://redux.js.org/) for state management
 
-### `npm start`
+## Getting Started
+
+### Dependencies
+
+NPM packages used:
+* [axios](https://www.npmjs.com/package/axios)
+* [dotenv](https://www.npmjs.com/package/dotenv)
+* [node-sass](https://www.npmjs.com/package/node-sass)
+* [react-alice-carousel](https://www.npmjs.com/package/react-alice-carousel)
+* [react-circular-progressbar](https://www.npmjs.com/package/react-circular-progressbar)
+* [react-redux](https://www.npmjs.com/package/react-redux)
+* [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+* [redux](https://www.npmjs.com/package/redux)
+* [redux-logger](https://www.npmjs.com/package/redux-logger)
+* [redux-thunk](https://www.npmjs.com/package/redux-thunk)
+
+### Installation
+
+1. Get a free TMDB API Key at [https://developers.themoviedb.org/3](https://developers.themoviedb.org/3)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/anishanandan12/tmdb-app.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Enter your API KEY in `.env` file
+   ```JS
+   REACT_APP_TMDB_API=ENTER YOUR API KEY;
+   ```
+
+
+### Executing program
+
+```
+npm start
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -14,12 +55,16 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+```
+npm test
+```
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+```
+npm run build
+```
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -29,7 +74,9 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+```
+npm run eject
+```
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
