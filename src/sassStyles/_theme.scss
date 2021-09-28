@@ -1,0 +1,31 @@
+:root {
+  --theme-color1: #0d253f;
+  --theme-color2: #01b4e4;
+  --theme-color3: #90cea1;
+  --theme-gardient: linear-gradient(to right, #90cea1, #1ed5a9, #00b3e5);
+  --theme-gardient-alt: linear-gradient(to right, #c0fecf 0%, #1ed5a9 100%);
+  --theme-heading-text: #01b4e4;
+}
+.light {
+  --theme-box-shadow: rgba(0, 0, 0, 0.1);
+  --theme-border-color: #dadada;
+  --theme-page-background: #fff;
+  --theme-page-background-alt: #f9f9f9;
+  --theme-page-background-disabled: #eaeaea;
+  --theme-page-text: #032541;
+  --theme-page-text-dull: #797979;
+  --theme-text-shadow: 0px 4px 4px #cecece;
+  --theme-banner-backdrop: linear-gradient(to right, rgb(255, 255, 255) 150px, rgba(255, 255, 255, 0.6) 100%);
+}
+
+.dark {
+  --theme-box-shadow: rgba(255, 255, 255, 0.2);
+  --theme-border-color: #444444;
+  --theme-page-background: #011327;
+  --theme-page-background-alt: #0f1f31;
+  --theme-page-background-disabled: #383838;
+  --theme-page-text: #fff;
+  --theme-page-text-dull: #b9b9b9;
+  --theme-text-shadow: none;
+  --theme-banner-backdrop: linear-gradient(to right, rgb(0, 0, 0) 150px, rgba(0, 0, 0, 0.6) 100%);
+}

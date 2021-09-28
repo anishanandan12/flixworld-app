@@ -1,0 +1,58 @@
+@import "./variables";
+
+@mixin boxSetting {
+  background: var(--theme-page-background);
+  color: var(--theme-page-text);
+  box-shadow: 0 0 12px var(--theme-box-shadow);
+}
+
+@mixin posAbsFull {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Breakpoints
+@mixin xsMaxBreakPoint {
+  @media (max-width: #{$screen-xs}) {
+    @content;
+  }
+}
+
+@mixin smMaxBreakPoint {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+@mixin mdMaxBreakPoint {
+  @media (max-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+@mixin lgMaxBreakPoint {
+  @media (max-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+@mixin xlMaxBreakPoint {
+  @media (max-width: #{$screen-xl}) {
+    @content;
+  }
+}
+
+@mixin fullMaxBreakPoint {
+  @media (max-width: #{$screen-full}) {
+    @content;
+  }
+}
+
+@mixin customMaxBreakPoint($size) {
+  @media (max-width: $size+"px") {
+    @content;
+  }
+}

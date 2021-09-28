@@ -1,0 +1,86 @@
+@import "../../sassStyles/mixins";
+
+.filterPanel {
+  position: fixed;
+  left: 0;
+  top: 70px;
+  width: 300px;
+  height: calc(100% - 70px);
+  z-index: 2;
+  background: var(--theme-page-background-alt);
+  padding: 20px 15px;
+  border-right: 1px solid var(--theme-border-color);
+  transition: left 0.5s ease;
+
+  &.hidden {
+    left: -500px;
+  }
+}
+.dark .filterPanel {
+  border-color: transparent;
+}
+.filterPanel__heading {
+  margin-bottom: 30px;
+}
+.filterPanel__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filterPanel__subHeading {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.filterPanel__genre {
+  padding: 3px 10px;
+  font-size: 12px;
+  border-radius: 30px;
+  text-align: center;
+  margin: 3px;
+  color: var(--theme-page-text-dull);
+  border: 1px solid var(--theme-page-text-dull);
+  cursor: pointer;
+
+  &.selected {
+    background: var(--theme-color2);
+    border-color: var(--theme-color2);
+    color: #ffffff;
+  }
+}
+.filterPanel__btn {
+  background: var(--theme-color3);
+  color: #000000;
+  margin: 20px 3px 0;
+  padding: 7px 15px;
+  border-radius: 3px;
+  border: none;
+}
+.filterButton {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  border-radius: 50px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--theme-color3);
+  box-shadow: 0 0 12px var(--theme-box-shadow);
+  cursor: pointer;
+
+  svg {
+    stroke: var(--theme-color1);
+  }
+
+  @include smMaxBreakPoint {
+    padding: 6px;
+    bottom: auto;
+    top: 77px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+  }
+}

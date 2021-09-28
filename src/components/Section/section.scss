@@ -1,0 +1,34 @@
+@import "../../sassStyles/mixins";
+
+.section {
+  position: relative;
+}
+.section__heading {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 0 5px;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  z-index: 1;
+  background: var(--theme-page-background);
+  color: var(--theme-heading-text);
+  text-shadow: var(--theme-text-shadow);
+
+  @include smMaxBreakPoint {
+    font-size: 22px;
+  }
+}
+.section__cardContainer {
+  overflow: hidden;
+  overflow-x: auto;
+  padding-top: 10px;
+}
+.section__cardContainerInner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.common-container {
+  min-height: calc(100% - 36px);
+  padding: 0 10px;
+  margin: 0 auto;
+}

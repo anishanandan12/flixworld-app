@@ -1,0 +1,48 @@
+@import "./sassStyles/theme";
+@import "./sassStyles/mixins";
+
+/*! Firefox */
+html {
+  scrollbar-color: var(--theme-page-background-disabled) var(--theme-color3);
+}
+
+.app {
+  background: var(--theme-page-background);
+  color: var(--theme-page-text);
+  min-height: 100vh;
+
+  @include smMaxBreakPoint {
+    padding-bottom: 55px;
+  }
+
+  .app__content {
+    width: 100%;
+
+    main {
+      height: calc(100vh - 100px);
+      overflow: hidden;
+      overflow-y: auto;
+      position: relative;
+      scrollbar-width: thin;
+      scrollbar-color: var(--theme-page-background-disabled) var(--theme-color3);
+
+      @include smMaxBreakPoint {
+        height: calc(100vh - 156px);
+      }
+
+      &::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: var(--theme-page-background-disabled);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--theme-color3);
+        border-radius: 12px;
+        border: 3px solid var(--theme-page-background-disabled);
+      }
+    }
+  }
+}

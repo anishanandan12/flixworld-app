@@ -1,0 +1,60 @@
+@import "../../sassStyles/mixins";
+
+.popularityScore {
+  width: 45px;
+  height: 45px;
+  border-radius: 70px;
+  padding: 2px;
+  background: #081c22;
+
+  .CircularProgressbar .CircularProgressbar-path {
+    stroke-width: 6px;
+  }
+
+  .CircularProgressbar .CircularProgressbar-trail {
+    stroke: #53595a;
+    stroke-width: 5px;
+  }
+
+  .CircularProgressbar-customText {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: -2px;
+
+    sup {
+      font-size: 8px;
+      vertical-align: text-top;
+      font-weight: 300;
+    }
+  }
+
+  &.md {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+
+    .CircularProgressbar-customText {
+      font-size: 16px;
+    }
+  }
+
+  &.lg {
+    width: 70px;
+    height: 70px;
+    padding: 4px;
+
+    .CircularProgressbar-customText {
+      font-size: 20px;
+
+      sup {
+        font-size: 12px;
+      }
+    }
+  }
+
+  @include smMaxBreakPoint {
+    width: 36px;
+    height: 36px;
+  }
+}

@@ -1,0 +1,57 @@
+@import "../../sassStyles/mixins";
+
+.cards__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  margin: 20px 10px;
+  cursor: pointer;
+
+  &:hover .cards__poster {
+    transform: scale(1.02);
+  }
+
+  @include smMaxBreakPoint {
+    max-width: 110px;
+    width: 28%;
+    margin: 5px;
+  }
+}
+.cards__poster {
+  width: 100%;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 0 12px var(--theme-box-shadow);
+  transition: all 0.3s ease-in-out;
+}
+.cards__info {
+  padding: 10px;
+  position: relative;
+
+  .cards__popularity {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    transform: translateY(-50%);
+  }
+  .cards__year {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: var(--theme-page-text-dull);
+  }
+  .cards__name {
+    font-size: 16px;
+  }
+
+  @include smMaxBreakPoint {
+    padding: 5px;
+
+    .cards__year {
+      margin-bottom: 0;
+    }
+
+    .cards__name {
+      display: none;
+    }
+  }
+}
