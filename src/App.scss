@@ -1,11 +1,6 @@
 @import "./sassStyles/theme";
 @import "./sassStyles/mixins";
 
-/*! Firefox */
-html {
-  scrollbar-color: var(--theme-page-background-disabled) var(--theme-color3);
-}
-
 .app {
   background: var(--theme-page-background);
   color: var(--theme-page-text);

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Redirect } from "react-router";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.scss";
@@ -29,8 +30,14 @@ function App() {
                 <Route exact path="/">
                   <Home />
                 </Route>
+                <Route exact path="/movies">
+                  <Redirect to="/movies/1/all" />
+                </Route>
                 <Route path="/movies/:urlPage/:urlGenres">
                   <Discover media_type="movie" sectionTitle="Movies" />
+                </Route>
+                <Route exact path="/tv">
+                  <Redirect to="/tv/1/all" />
                 </Route>
                 <Route path="/tv/:urlPage/:urlGenres">
                   <Discover media_type="tv" sectionTitle="TV Series" />
