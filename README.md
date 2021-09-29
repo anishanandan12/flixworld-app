@@ -24,7 +24,6 @@ NPM packages used:
 * [react-router-dom](https://www.npmjs.com/package/react-router-dom)
 * [redux](https://www.npmjs.com/package/redux)
 * [redux-logger](https://www.npmjs.com/package/redux-logger)
-* [redux-thunk](https://www.npmjs.com/package/redux-thunk)
 
 ### Installation
 
